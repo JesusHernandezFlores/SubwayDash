@@ -8,16 +8,16 @@ Menu.prototype =
 {
 	preload: function()
 	{
-		game.load.image('Menu', '../Assets/Art/Screens/Menu.png');
+		game.load.image('Menu', 'SubwayDash/Assets/Art/Screens/Menu.png');
 
 		//Preload some sounds here because my computer is lame and didn't want to
 		//encode my sounds to MP3 files so now I have to use WAV but WAV is too big and
 		//increases load time
-		game.load.audio('train', '../Assets/Sound/SFX/Train.wav');
-		game.load.audio('jump', '../Assets/Sound/SFX/Jump.wav');
-		game.load.audio('crash', '../Assets/Sound/SFX/Crash.wav');
-		game.load.audio('zoomDown', '../Assets/Sound/SFX/ZoomDown.wav');
-		game.load.audio('land', '../Assets/Sound/SFX/Land.wav');
+		game.load.audio('train', 'SubwayDash/Assets/Sound/SFX/Train.wav');
+		game.load.audio('jump', 'SubwayDash/Assets/Sound/SFX/Jump.wav');
+		game.load.audio('crash', 'SubwayDash/Assets/Sound/SFX/Crash.wav');
+		game.load.audio('zoomDown', 'SubwayDash/Assets/Sound/SFX/ZoomDown.wav');
+		game.load.audio('land', 'SubwayDash/Assets/Sound/SFX/Land.wav');
 	},
 
 	//Just display the Menu
@@ -55,7 +55,7 @@ Controls.prototype =
 {
 	preload: function()
 	{
-		game.load.image('Controls', '../Assets/Art/Screens/Controls.png');
+		game.load.image('Controls', 'SubwayDash/Assets/Art/Screens/Controls.png');
 	},
 
 	create: function(game)
@@ -80,7 +80,7 @@ Credits.prototype =
 {
 	preload: function()
 	{
-		game.load.image('Credits', '../Assets/Art/Screens/Credits.png');
+		game.load.image('Credits', 'SubwayDash/Assets/Art/Screens/Credits.png');
 	},
 
 	create: function(game)
@@ -131,17 +131,17 @@ GameStart.prototype =
 	preload: function()
 	{
 		//LOAD IN ALL THE (other) THINGS
-		game.load.image('background', '../Assets/Art/TheOtherStuff/Background.jpg');
-		game.load.image('ground', '../Assets/Art/TheOtherStuff/Platform.png');
-		game.load.image('train', '../Assets/Art/TheOtherStuff/Train.png');
+		game.load.image('background', 'SubwayDash/Assets/Art/TheOtherStuff/Background.jpg');
+		game.load.image('ground', 'SubwayDash/Assets/Art/TheOtherStuff/Platform.png');
+		game.load.image('train', 'SubwayDash/Assets/Art/TheOtherStuff/Train.png');
 
-		game.load.image('trashcan', '../Assets/Art/Obstacles/trashcan.png');
-		game.load.image('vendingMachine', '../Assets/Art/Obstacles/VendingMachine.png');
+		game.load.image('trashcan', 'SubwayDash/Assets/Art/Obstacles/trashcan.png');
+		game.load.image('vendingMachine', 'SubwayDash/Assets/Art/Obstacles/VendingMachine.png');
 		
 		
-		game.load.audio('bg', '../Assets/Sound/Background/Track.ogg');
+		game.load.audio('bg', 'SubwayDash/Assets/Sound/Background/Track.ogg');
 
-		game.load.atlas('player', '../Assets/Art/Sprite/PlayerSprites.png', '../Assets/Art/Sprite/PlayerSprites.json');
+		game.load.atlas('player', 'SubwayDash/Assets/Art/Sprite/PlayerSprites.png', 'SubwayDash/Assets/Art/Sprite/PlayerSprites.json');
 	},
 
 	create: function()
@@ -312,7 +312,7 @@ Dead.prototype =
 	//preload the loss screen
 	preload: function()
 	{
-		game.load.image('GameOver', '../Assets/Art/Screens/GameOverScreen.png');
+		game.load.image('GameOver', 'SubwayDash/Assets/Art/Screens/GameOverScreen.png');
 	},
 
 	create: function()
